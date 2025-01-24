@@ -1,0 +1,176 @@
+    :root {
+    --panel-width: 135px;
+    --transition-duration: 0.3s;
+    --transition-timing: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    html,
+    body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    }
+
+    body.no-scroll {
+    overflow: hidden;
+    }
+
+    body.allow-scroll {
+    overflow: auto;
+    }
+
+    .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    }
+
+    .panel {
+    transition: width var(--transition-duration) var(--transition-timing);
+    width: var(--panel-width);
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    }
+
+    .panel h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 20px;
+    white-space: nowrap;
+    margin: 0;
+    transition: opacity var(--transition-duration) var(--transition-timing);
+    transform: translate(-50%, -50%);
+    }
+
+    .left-panel h1 {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    }
+
+    .right-panel h1 {
+    transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .panel h1.slide-left,
+    .panel h1.slide-right {
+    opacity: 1;
+    }
+
+    .left-panel.expanded h1 {
+    transform: translate(-50%, -50%) rotate(-90deg) scale(0.9);
+    opacity: 0;
+    }
+
+    .right-panel.expanded h1 {
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.9);
+    opacity: 0;
+    }
+
+    .left-panel {
+    background-color: #333;
+    }
+
+    .right-panel {
+    background-color: #555;
+    margin-left: auto;
+    }
+
+    .panel-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    }
+
+    .panel-content.visible {
+    transition: opacity .15s cubic-bezier(0.7, 0, 0.84, 0);
+    opacity: 1;
+    pointer-events: auto;
+    }
+
+    .panel p{
+    margin: 0;
+    color: white;
+    text-align: center;
+    }
+
+    .middle {
+    flex: 1;
+    width: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .panel.expanded {
+    cursor: default;
+    }
+
+    .left-panel.expanded,
+    .right-panel.expanded {
+    width: calc(100% - var(--panel-width));
+    }
+
+    .middle.shrink {
+    flex: 0 0 0;
+    overflow: hidden;
+    opacity: 0;
+    }
+
+
+
+/*  // === Custome Panels == */
+
+.collapsible {
+    background-color: #444444;
+    color: white;
+    
+    padding: 20px 18px 115px 225px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 75px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 100px 18px;
+    display: none;
+    overflow: hidden;
+  }
+
+  .empty {
+    margin: 20px 22px 30px 20px;        
+}
+
+
+
+
+.stepping-stones-mask {
+  mask-image: url(images/stepping-stones-logo.png);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+.stepping-stones {
+    margin: 20px 22px 30px 20px;        
+}
+
+/* .stepping-stones, .content {
+    background-color: #000000; 
+} */
+
+/* .stepping-stones, .collapsible {
+} */
