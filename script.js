@@ -86,9 +86,7 @@ for (i = 0; i < coll.length; i++) {
     var content = this.nextElementSibling;
     if(content === null){
       return;
-    }
-
-    if (content.style.display === "block") {
+    } else if (content.style.display === "block") {
       content.style.display = "none";
     } else {
       content.style.display = "block";
