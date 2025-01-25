@@ -136,29 +136,36 @@
   .collapsible {
     background-color: #444444;
     color: white;
-    padding: 20px 65vw 95px 225px;
+    padding: 20px 65vw 50px 225px;
     cursor: pointer;
     border: none;
     text-align: left;
     font-size: 1.2rem;
-    max-width: 300px;
     margin: 20px 22px 0px 20px; 
-    border-radius: 5px;
+    height: 172px;
   }
   
   .collapsible:hover, .active {
     background-color: #555555;
+    transform: scale(1.01);
   }
   
   .content {
     display: none;
     background-color: #222222;
     color: white;
-    max-width: 300px;
     padding: 20px 65vw 115px 225px;
     margin: 0px 22px 30px 20px; 
-    border-radius: 5px;
   }
+
+  .button-like { 
+    transition: transform 0.15s ease-out;
+  }
+
+  .button-like:hover {
+    transform: scale(1.01);
+  }
+   
 
   /* .empty {
   margin: 20px 22px 30px 20px;        
@@ -184,20 +191,22 @@
   .stepping-stones > .collapsible {
   }
 
-  /* .stepping-stones > .button-like { 
-  }
   
-  .stepping-stones > .button-like:hover {
-  }
-   */
   .stepping-stones-mask > .button-content {
-    margin: 0px 0px 0px 40px;
+    min-width: 1200px;
+    margin: 0px 0px 0px 3vw;
     font-family: 'Silkscreen';
     font-style: normal;
   }
   
   .stepping-stones-mask > .button-content h2 {
+    margin: 0;
+    font-size: 75px;
+    font-weight: 700;
   }
   
   .stepping-stones-mask > .button-content h3 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 400;
   }

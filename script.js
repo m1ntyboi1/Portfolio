@@ -79,17 +79,15 @@ rightPanel.addEventListener('click', () => {
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
-var toggle_content_window = true;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    toggle_content_window = !toggle_content_window
     
     while (content) {
       if (content.nodeName === "DIV") {
-        if (toggle_content_window) {
+        if (content.style.display === "block") {
           content.style.display = "none"
         } else {
           content.style.display = "block"
