@@ -21,8 +21,8 @@ function closeAll() {
   rightContent.classList.remove('visible');
   middle.classList.remove('shrink');
 
-  rightHeading.textContent = "Photography"
-  leftHeading.textContent = "Game Dev"
+  rightHeading.textContent = "PHOTOGRAPHY"
+  leftHeading.textContent = "GAME DEV"
 }
 
 // Expand the left panel and shrink the middle
@@ -79,17 +79,25 @@ rightPanel.addEventListener('click', () => {
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
+var toggle_content_window = true;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if(content === null){
-      return;
-    } else if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
+    toggle_content_window = !toggle_content_window
+    
+    while (content) {
+      if (content.nodeName === "DIV") {
+        if (toggle_content_window) {
+          content.style.display = "none"
+        } else {
+          content.style.display = "block"
+        }
+      }
+      content = content.nextElementSibling;
     }
+
+
   });
 }
