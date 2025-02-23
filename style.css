@@ -220,3 +220,11 @@
   font-size: 25px;
   text-align: justify;
   }
+
+  .stepping-stones > .content a{
+    color: #F90000;
+    text-decoration: none;
+    font-family: 'Silkscreen';
+    font-size: 25px;
+    text-align: justify;
+    }
