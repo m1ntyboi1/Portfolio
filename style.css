@@ -210,7 +210,7 @@
 
     /* Content's Info */
   .tilting-game > .content{
-    background: linear-gradient(323deg, rgba(48,0,0,1) 14%, rgba(0,0,0,1) 89%);
+    background: linear-gradient(231deg, #a3d4ff 0%, #1080e3 100%);
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 2%;
@@ -225,7 +225,7 @@
     }
   
     .tilting-game > .content a{
-    color: #F90000;
+    color: #004ff9;
     text-decoration: none;
     font-family: 'Silkscreen';
     font-size: 25px;
@@ -239,39 +239,8 @@
     }
   
     .tilting-game > .content > .flex-container > div {
-    flex: 1; /* Allows equal distribution */
+    flex: 1;
     }
-  
-    .tilting-game > .content > .flex-container > div img {
-    max-width: 100%; /* Ensure images scale properly */
-    height: auto;
-    }
-  
-    .tilting-game > .content > .flex-container > div:last-child {
-    flex: 2; /* Make the text container take up more space */
-    text-align: left; /* Ensure proper text alignment */
-    }
-  
-    /* Responsive layout: Stack items when screen width is small */
-    @media (max-width: 768px) {
-      .tilting-game > .content > .flex-container {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center items */
-      }
-  
-      .tilting-game > .content > .flex-container > div {
-      width: 100%; /* Make items take full width */
-      text-align: center; /* Center text */
-      }
-    }
-
-
-
-
-
-
-
-
 
   /*  // === Stepping Stones Panel == */
 
