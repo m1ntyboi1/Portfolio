@@ -219,16 +219,18 @@
     }
   
     .tilting-game > .content p{
-    font-family: 'Silkscreen';
+      font-family: "Rowdies", sans-serif;
+      font-weight: 400;
     font-size: 18px;
-    letter-spacing: -1px;
+    letter-spacing: 1px;
     text-align: justify;
     }
   
     .tilting-game > .content a{
+      font-family: "Rowdies", sans-serif;
+      font-weight: 700;
     color: #004ff9;
     text-decoration: none;
-    font-family: 'Silkscreen';
     font-size: 25px;
     text-align: justify;
     }
