@@ -172,7 +172,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: linear-gradient(349deg, #a3d4ff, #2e9dff 66%);
+    background: linear-gradient(349deg, #b5cff8, #75acff 66%);
     overflow: hidden;
     }
   
@@ -185,7 +185,8 @@
   
     .tilting-game-mask > .button-content {
     flex: 1;
-    font-family: 'Coiny';
+    font-family: "Lexend", sans-serif;
+    font-weight: 900;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -210,7 +211,7 @@
 
     /* Content's Info */
   .tilting-game > .content{
-    background: linear-gradient(231deg, #a3d4ff 0%, #1080e3 100%);
+    background: linear-gradient(108deg, #a3d4ff 0%, #5a8db9 100%);
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 2%;
