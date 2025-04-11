@@ -374,7 +374,7 @@
     
     text-align: right;
     font-family: "Wavefont", system-ui;
-    font-variation-settings: "ROND" 0, "YELA" -25;
+    font-variation-settings: "ROND" 0, "YELA" -15;
 
     gap: 0.2em; /* Space between title and subtitle */
     padding-bottom: 2.5vh;
@@ -384,7 +384,7 @@
       margin: 0;
       font-size: clamp(4px, 6vw, 95px);
       font-weight: 400;
-      letter-spacing: 1.5vw;
+      letter-spacing: 20%;
       line-height: 1; /* Reduce spacing between lines */
     }
     
