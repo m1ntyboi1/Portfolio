@@ -21,7 +21,7 @@ function closeAll() {
   rightContent.classList.remove('visible');
   middle.classList.remove('shrink');
 
-  rightHeading.textContent = "PHOTOGRAPHY"
+  rightHeading.textContent = "OTHER PROJECTS"
   leftHeading.textContent = "GAME DEV"
 }
 

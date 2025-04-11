@@ -222,18 +222,18 @@
     color: #ffffff;
       font-family: "Rowdies", sans-serif;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 22px;
     letter-spacing: 1px;
     text-shadow: 2px 2px #acc7ff;
     text-align: justify;
     }
   
     .tilting-game > .content a{
-    color: #004ff9;
+    color: #1e65ff;
       font-family: "Rowdies", sans-serif;
       font-weight: 700;
-      font-size: 25px;
-    text-shadow: none;
+      font-size: 31px;
+      text-shadow: 1px 1px 2px #0055ff;
     text-decoration: none;
     text-align: justify;
     }
@@ -347,3 +347,58 @@
     text-align: center; /* Center text */
     }
   }
+
+
+  
+  /*  // === GPU Panel == */
+  .GPU-mask {
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: flex-start; /* Ensures image and text are horizontally aligned */
+    max-width: 100%;
+    background: linear-gradient(90deg, #353535, #191919, #000000);
+    overflow: hidden;
+    }
+  
+    .GPU-mask img {
+    width: 175px;
+    height: auto;
+    margin-right: 2.75vw;
+    margin-left: 1.75vw;
+    }
+  
+    .GPU-mask > .button-content {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    
+    text-align: right;
+    font-family: "Wavefont", system-ui;
+    font-variation-settings: "ROND" 0, "YELA" -100;
+
+    gap: 0.2em; /* Space between title and subtitle */
+    padding-bottom: 2.5vh;
+    }
+  
+    .GPU-mask > .button-content h2 {
+    margin: 0;
+    font-size: clamp(4px, 6vw, 95px);
+    font-weight: 400;
+    letter-spacing: 3vw;
+    line-height: 1; /* Reduce spacing between lines */
+    }
+  
+    .GPU-mask > .button-content h3 {
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+    font-size: clamp(2px, 2.5vw, 35px);
+    font-weight: 400;
+    line-height: 1; /* Keep consistent spacing */
+    }
+
+    .GPU > .content > img {
+      width: 47.5%;
+      height: 47.5%;
+      object-fit: contain;
+      margin: 1%; 
+      }
