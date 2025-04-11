@@ -384,6 +384,7 @@
       margin: 0;
       font-size: clamp(4px, 6vw, 95px);
       font-weight: 400;
+
       letter-spacing: 20%;
       line-height: 1; /* Reduce spacing between lines */
     }
