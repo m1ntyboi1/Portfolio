@@ -374,20 +374,20 @@
     
     text-align: right;
     font-family: "Wavefont", system-ui;
-    font-variation-settings: "ROND" 0, "YELA" -100;
+    font-variation-settings: "ROND" 0, "YELA" -25;
 
     gap: 0.2em; /* Space between title and subtitle */
     padding-bottom: 2.5vh;
     }
   
     .GPU-mask > .button-content h2 {
-    margin: 0;
-    font-size: clamp(4px, 6vw, 95px);
-    font-weight: 400;
-    letter-spacing: 3vw;
-    line-height: 1; /* Reduce spacing between lines */
+      margin: 0;
+      font-size: clamp(4px, 6vw, 95px);
+      font-weight: 400;
+      letter-spacing: 3vw;
+      line-height: 1; /* Reduce spacing between lines */
     }
-  
+    
     .GPU-mask > .button-content h3 {
     margin: 0;
     font-family: "Lexend", sans-serif;
@@ -397,8 +397,21 @@
     }
 
     .GPU > .content > img {
-      width: 47.5%;
-      height: 47.5%;
-      object-fit: contain;
-      margin: 1%; 
-      }
+    width: 47.5%;
+    height: 47.5%;
+    object-fit: contain;
+    margin: 1%; 
+    } 
+
+    .GPU > .content > p {
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    font-size: clamp(10px, 1vw, 95px);
+
+    text-align: justify;
+
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+    } 
