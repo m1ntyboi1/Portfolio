@@ -1,2 +1,3 @@
-another portfolio to add to the internet
-https://chopsdev.github.io/Portfolio/
+This is the code for my portfolio.
+
+The original code was done by ChopsDev on github and was used with permission.

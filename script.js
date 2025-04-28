@@ -22,7 +22,7 @@ function closeAll() {
   middle.classList.remove('shrink');
 
   rightHeading.textContent = "OTHER PROJECTS"
-  leftHeading.textContent = "GAME DEV"
+  leftHeading.textContent = "Music/Audio"
 }
 
 // Expand the left panel and shrink the middle
@@ -59,7 +59,7 @@ function toggleScroll(toggle){
     }
 }
 
-// Clicking "Game Dev" (left panel)
+// Clicking "Music/Audio" (left panel)
 leftPanel.addEventListener('click', () => {
   if (rightPanel.classList.contains('expanded')) {
     closeAll();
@@ -68,7 +68,7 @@ leftPanel.addEventListener('click', () => {
   }
 });
 
-// Clicking "Photography" (right panel)
+// Clicking "Other Projects" (right panel)
 rightPanel.addEventListener('click', () => {
   if (leftPanel.classList.contains('expanded')) {
     closeAll();
